@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+
+	<script>(function (exports, d) {
+			var _isReady = false,
+				_event,
+				_fns = [];
+
+			function onReady(event) {
+				d.removeEventListener("DOMContentLoaded", onReady);
+				_isReady = true;
+				_event = event;
+				_fns.forEach(function (_fn) {
+					var fn = _fn[0],
+						context = _fn[1];
+					fn.call(context || exports, window.jQuery);
+				});
+			}
+
+			function onReadyIe(event) {
+				if (d.readyState === "complete") {
+					d.detachEvent("onreadystatechange", onReadyIe);
+					_isReady = true;
+					_event = event;
+					_fns.forEach(function (_fn) {
+						var fn = _fn[0],
+							context = _fn[1];
+						fn.call(context || exports, event);
+					});
+				}
+			}
+
+			d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) ||
+				d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+			function domReady(fn, context) {
+				if (_isReady) {
+					fn.call(context, _event);
+				}
+
+				_fns.push([fn, context]);
+			}
+
+			exports.mesmerizeDomReady = domReady;
+		})(window, document);</script>
+	<title>Projeto Nina</title>
+	<meta name="robots" content="max-image-preview:large">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+
+	<link rel="stylesheet" id="companion-bundle-css"
+		data-href=".//wp-content/plugins/mesmerize-companion/theme-data/mesmerize/assets/css/companion.bundle.min.css?ver=1.6.110"
+		type="text/css" media="all">
+	<link rel="stylesheet" id="wp-block-library-css" href="./wp-includes/css/dist/block-library/style.min.css?ver=6.4.2"
+		type="text/css" media="all">
+	<style id="classic-theme-styles-inline-css" type="text/css">
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<style id="global-styles-inline-css" type="text/css">
+		body {
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		:where(.is-layout-grid) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-flow>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em;
+		}
+
+		body .is-layout-flow>.alignright {
+			float: right;
+			margin-inline-start: 2em;
+			margin-inline-end: 0;
+		}
+
+		body .is-layout-flow>.aligncenter {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		body .is-layout-constrained>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em;
+		}
+
+		body .is-layout-constrained>.alignright {
+			float: right;
+			margin-inline-start: 2em;
+			margin-inline-end: 0;
+		}
+
+		body .is-layout-constrained>.aligncenter {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+			max-width: var(--wp--style--global--content-size);
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		body .is-layout-constrained>.alignwide {
+			max-width: var(--wp--style--global--wide-size);
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		body .is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		body .is-layout-flex>* {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		body .is-layout-grid>* {
+			margin: 0;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		.wp-block-navigation a:where(:not(.wp-element-button)) {
+			color: inherit;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		.wp-block-pullquote {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+
+	<link rel="stylesheet" id="mesmerize-style-css" href="./wp-content/themes/mesmerize/style.min.css?ver=1.6.85"
+		type="text/css" media="all">
+	<style id="mesmerize-style-inline-css" type="text/css">
+		img.logo.dark,
+		img.custom-logo {
+			width: auto;
+			max-height: 70px !important;
+		}
+
+		/** cached kirki style */
+		.header-homepage:not(.header-slide).color-overlay:after {
+			filter: invert(0%);
+		}
+
+		.mesmerize-front-page .header-separator .svg-white-bg {
+			fill: #ffffff !important;
+		}
+
+		.mesmerize-front-page .header-separator path.svg-accent {
+			stroke: rgb(53, 171, 122) !important;
+		}
+
+		.mesmerize-front-page .header-separator svg {
+			height: 116px !important;
+		}
+
+		.header.color-overlay:before {
+			background: #00A5FF;
+		}
+
+		.header .background-overlay,
+		.header.color-overlay::before {
+			opacity: 0.5;
+		}
+
+		.header-homepage .header-description-row {
+			padding-top: 5%;
+			padding-bottom: 15%;
+		}
+
+		.inner-header-description {
+			padding-top: 1%;
+			padding-bottom: 1%;
+		}
+
+		@media screen and (max-width:767px) {
+			.header-homepage .header-description-row {
+				padding-top: 10%;
+				padding-bottom: 15%;
+			}
+		}
+
+		@media only screen and (min-width: 768px) {
+			.header-content .align-holder {
+				width: 80% !important;
+			}
+
+			.header-homepage:not(.header-slide) .header-hero-media {
+				-webkit-flex-basis: 29%;
+				-moz-flex-basis: 29%;
+				-ms-flex-preferred-size: 29%;
+				flex-basis: 29%;
+				max-width: 29%;
+				width: 29%;
+			}
+
+			.header-homepage:not(.header-slide) .header-hero-content {
+				-webkit-flex-basis: calc(100% - 29%) !important;
+				-moz-flex-basis: calc(100% - 29%) !important;
+				-ms-flex-preferred-size: calc(100% - 29%) !important;
+				flex-basis: calc(100% - 29%) !important;
+				max-width: calc(100% - 29%) !important;
+				width: calc(100% - 29%) !important;
+			}
+
+			.inner-header-description {
+				text-align: center !important;
+			}
+		}
+	</style>
+	<link rel="stylesheet" id="mesmerize-style-bundle-css"
+		href="./wp-content/themes/mesmerize/assets/css/theme.bundle.min.css?ver=1.6.85" type="text/css" media="all">
+	<link rel="stylesheet" id="mesmerize-fonts-css"
+		data-href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext"
+		type="text/css" media="all">
+	<script type="text/javascript" src="./wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+	<script type="text/javascript" id="jquery-core-js-after">
+		/* <![CDATA[ */
+
+		(function () {
+			function setHeaderTopSpacing() {
+
+				setTimeout(function () {
+					var headerTop = document.querySelector('.header-top');
+					var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+					for (var i = 0; i < headers.length; i++) {
+						var item = headers[i];
+						item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+					}
+
+					var languageSwitcher = document.querySelector('.mesmerize-language-switcher');
+
+					if (languageSwitcher) {
+						languageSwitcher.style.top = "calc( " + headerTop.getBoundingClientRect().height + "px + 1rem)";
+					}
+
+				}, 100);
+
+
+			}
+
+			window.addEventListener('resize', setHeaderTopSpacing);
+			window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing
+			mesmerizeDomReady(setHeaderTopSpacing);
+		})();
+
+
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="./wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+		id="jquery-migrate-js"></script>
+
+	<link rel="canonical" href="./index.html">
+	<link rel="shortlink" href="./index.html">
+
+
+	<style data-name="header-overlap-with">
+		@media screen and (min-width: 768px) {
+			.mesmerize-front-page.overlap-first-section:not(.mesmerize-front-page-with-slider) .header-homepage {
+				padding-bottom: 200px;
+			}
+
+			.mesmerize-front-page.overlap-first-section:not(.mesmerize-front-page-with-slider) .page-content div[data-overlap]:first-of-type>div:not([class*="section-separator"]) {
+				margin-top: -200px;
+			}
+		}
+	</style>
+
+	<script type="text/javascript" data-name="async-styles">(function () {
+			var links = document.querySelectorAll('link[data-href]');
+			for (var i = 0; i < links.length; i++) {
+				var item = links[i];
+				item.href = item.getAttribute('data-href')
+			}
+		})();</script>
+	<style type="text/css">
+		.recentcomments a {
+			display: inline !important;
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+	</style>
+	<link rel="icon" href="./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-3-32x32.png" sizes="32x32">
+	<link rel="icon" href="./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-3-192x192.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-3-180x180.png">
+	<meta name="msapplication-TileImage" content="./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-3-270x270.png">
+	<style type="text/css" id="wp-custom-css">
+		c1 {
+			border: 2px solid red;
+		}
+	</style>
+	<style id="page-content-custom-styles">
+		[data-id="about-9"] .overlay-box .overlay-box-offset {
+			transform: translate(31%, -8%);
+			width: 83%;
+			height: 113%;
+
+		}
+
+		[data-id="about--2"] .overlay-box .overlay-box-offset {
+			transform: translate(31%, -8%);
+			width: 83%;
+			height: 113%;
+			background-color: rgb(53, 171, 122);
+
+		}
+	</style>
+	<style data-name="header-shapes">
+		.header-homepage:not(.header-slide).color-overlay:after {
+			background: url(./wp-content/themes/mesmerize/assets/images/header-shapes/circles.png) center center/ cover no-repeat
+		}
+	</style>
+	<style data-name="background-content-colors">
+		.mesmerize-inner-page .page-content,
+		.mesmerize-inner-page .content,
+		.mesmerize-front-page.mesmerize-content-padding .page-content {
+			background-color: #F5FAFD;
+		}
+	</style>
+</head>
+
+<body
+	class="home page-template page-template-page-templates page-template-homepage page-template-page-templateshomepage-php page page-id-512 wp-custom-logo mesmerize-front-page mesmerize-content-no-padding ">
+	<style>
+		.screen-reader-text[href="#page-content"]:focus {
+			background-color: #f1f1f1;
+			border-radius: 3px;
+			box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+			clip: auto !important;
+			clip-path: none;
+			color: #21759b;
+
+		}
+	</style>
+	<a class="skip-link screen-reader-text" href="#page-content">Skip to content</a>
+	<div id="page-top" class="header-top homepage">
+		<div class="navigation-bar homepage" data-sticky="0" data-sticky-mobile="1" data-sticky-to="top">
+			<div class="navigation-wrapper ">
+				<div class="row basis-auto">
+					<div class="logo_col col-xs col-sm-fit">
+						<a href="./index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="1846"
+								height="3855" src="./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2.png"
+								class="custom-logo" alt="Projeto Nina" decoding="async" fetchpriority="high"
+								srcset="./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2.png 1846w, ./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2-144x300.png 144w, ./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2-768x1604.png 768w, ./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2-490x1024.png 490w, ./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2-1024x2138.png 1024w, ./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2-517x1080.png 517w"
+								sizes="(max-width: 1846px) 100vw, 1846px"></a>
+					</div>
+					<div class="main_menu_col col-xs">
+						<div id="mainmenu_container" class="row">
+							<ul id="main_menu" class="active-line-bottom main-menu dropdown-menu">
+								<li id="menu-item-514"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-512 current_page_item menu-item-514">
+									<a href="./index.html" aria-current="page">Início</a></li>
+								<li id="menu-item-552"
+									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-552">
+									<a href="./index.html#escola">Escola</a></li>
+								<li id="menu-item-563"
+									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-563">
+									<a href="./index.html#equipe">Equipe</a></li>
+								<li id="menu-item-691"
+									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-691">
+									<a href="./index.html#atividades">Atividades</a></li>
+							</ul>
+						</div> <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper"
+							data-direction="right" data-width="300px" data-push="false">
+							<div class="bubble"></div>
+							<i class="fa fa-bars"></i>
+						</a>
+						<div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
+							<div class="offcanvas-top">
+								<div class="logo-holder">
+									<a href="./index.html" class="custom-logo-link" rel="home" aria-current="page"><img
+											width="1846" height="3855"
+											src="./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2.png"
+											class="custom-logo" alt="Projeto Nina" decoding="async"
+											srcset="./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2.png 1846w, ./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2-144x300.png 144w, ./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2-768x1604.png 768w, ./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2-490x1024.png 490w, ./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2-1024x2138.png 1024w, ./wp-content/uploads/2019/09/cropped-Logo-Nina-Marrom-2-517x1080.png 517w"
+											sizes="(max-width: 1846px) 100vw, 1846px"></a>
+								</div>
+							</div>
+							<div id="offcanvas-menu" class="menu-main-menu-container">
+								<ul id="offcanvas_menu" class="offcanvas_menu">
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-512 current_page_item menu-item-514">
+										<a href="./index.html" aria-current="page">Início</a></li>
+									<li
+										class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-552">
+										<a href="./index.html#escola">Escola</a></li>
+									<li
+										class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-563">
+										<a href="./index.html#equipe">Equipe</a></li>
+									<li
+										class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-691">
+										<a href="./index.html#atividades">Atividades</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="page" class="site">
+
+		<div class="header-wrapper">
+			<div class="header-homepage  color-overlay" style="min-height:100vh;">
+
+				<div class="header-description gridContainer media-on-right">
+					<div class="row header-description-row  ">
+						<div class="header-hero-content col-md col-xs-12">
+							<div class="row header-hero-content-v-align  middle-sm">
+								<div class="header-content col-xs-12">
+									<div class="align-holder left">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="header-hero-media col-md col-xs-12">
+							<div class="row header-hero-media-v-align middle-sm">
+								<div class="col-xs-12">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<script>window.mesmerizeSetHeaderTopSpacing();</script>
+
+				<div class="header-separator header-separator-bottom header-separator-reverse"><svg
+						preserveaspectratio="none" viewbox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
+						<g fill="none">
+							<path class="svg-white-bg"
+								d="M1000 27.588v-27.588h-1000v78.709c185.603-24.327 313.804-36.323 384.603-35.986 106.432.506 167.531 21.933 236.417 21.933s183.312-50.088 254.721-55.62c47.265-3.661 88.685 2.523 124.26 18.552z"
+								fill="#000"></path>
+							<path class="svg-accent"
+								d="M-1.23 87.791c171.627-34.447 300.773-52.658 387.438-54.634 129.998-2.964 166.902 40.422 235.909 40.422s175.29-63.463 246.825-68.994c47.69-3.687 91.633 10.063 131.828 41.25"
+								stroke="#50E3C2" stroke-width="1"></path>
+						</g>
+					</svg></div>
+			</div>
+		</div>
+
+		<div id="page-content" class="page-content">
+			<div class="content">
+				<div class="sek-wp-content-wrapper" data-sek-wp-post-id="512"
+					data-sek-wp-edit-link=".//wp-admin/post.php?post=512&amp;action=edit" title="WordPress content">
+
+
+					<div class="sek-wp-content-wrapper" data-sek-wp-post-id="512"
+						data-sek-wp-edit-link=".//wp-admin/post.php?post=512&amp;action=edit" title="WordPress content">
+
+
+						<div class="sek-wp-content-wrapper" data-sek-wp-post-id="512"
+							data-sek-wp-edit-link=".//wp-admin/post.php?post=512&amp;action=edit"
+							title="WordPress content">
+
+
+							<div class="sek-wp-content-wrapper" data-sek-wp-post-id="512"
+								data-sek-wp-edit-link=".//wp-admin/post.php?post=512&amp;action=edit"
+								title="WordPress content">
+
+
+								<div class="sek-wp-content-wrapper" data-sek-wp-post-id="512"
+									data-sek-wp-edit-link=".//wp-admin/post.php?post=512&amp;action=edit"
+									title="WordPress content">
+
+
+									<div data-label="Content" data-id="content--1" data-export-id="content-3"
+										data-category="content"
+										class="content-3 content-section content-section-spacing" id="content-1"
+										style="background-color: rgb(245, 250, 253);">
+										<div>
+											<div class="row middle-xs">
+												<div class="col-sm-7 full-col-left-padding full-col-right-padding">
+													<div class="row">
+														<div data-type="column"
+															class="space-bottom-small content-title-col">
+															<h2 class="">Em linhas gerais, o Nina visa:</h2>
+															<h3 class="">– Incentivar as alunas de graduação em
+																Computação na tríade Ensino, Pesquisa e Extensão;</h3>
+															<h3 class="">– Difundir a área de Computação e suas
+																possibilidades de atuação entre jovens alunas de uma
+																comunidade indígena;</h3>
+															<h3 class="">– Estimular o pensamento computacional por meio
+																de atividades lúdicas, envolvendo atividades
+																desplugadas, gamificação e/ou jogos;</h3>
+														</div>
+													</div>
+													<div class="row spaced-cols" data-type="row">
+														<div class="col-xs-6" data-type="column"> </div>
+													</div>
+												</div>
+												<div class="col-sm-5 bg-image shadow-large-black revert-classes-holder"
+													data-bg="image"
+													style='background-image: url("./wp-content/uploads/2019/09/cropped-IMG-20190604-WA0064-3.jpg");'>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-label="Escola" data-id="about--2" data-export-id="about-9"
+										data-category="about" class="about-9 content-section content-section-spacing"
+										id="escola" style="background-color: rgb(255, 255, 255);">
+										<div class="gridContainer">
+											<div class="row middle-sm text-center">
+												<div class="col-sm-5 space-bottom-xs content-column content-center-sm"
+													data-type="column">
+													<h5 class="">LOCAL DE ATUAÇÃO</h5>
+													<h2 class="">O Projeto atua na<br>
+														<font face="Playfair Display, sans-serif"><i>Escola Estadual
+																Indígena Cacique Domingos Barbosa dos Santos,&nbsp;</i>
+														</font>localizada na aldeia Jaraguá na cidade de Rio Tinto,
+														litoral norte da Paraíba.
+													</h2>
+												</div>
+												<div
+													class="col-sm-7 flexbox flexbox middle-xs center-xs space-bottom-xs">
+													<div
+														class="overlay-box flexbox middle-xs center-xs overlay-holder ">
+														<div
+															class="overlay-box-offset offset-background shadow-medium bg-color2 hide-xs">
+														</div>
+														<p> <img decoding="async" class="flexbox shadow-large img1"
+																src="./wp-content/uploads/2019/09/cropped-WhatsApp-Image-2019-09-24-at-22.05.11.jpeg"
+																data-size="600x400" alt=""
+																title="cropped-WhatsApp-Image-2019-09-24-at-22.05.11.jpeg">
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-label="Equipe" data-id="team--1" data-export-id="team-2"
+										data-category="team" class="team-2 content-section content-section-spacing"
+										id="equipe" style="background-color: rgb(245, 250, 253);">
+										<div class="gridContainer">
+											<div class="row text-center">
+												<div class="section-title-col" data-type="column">
+													<h2 class="">Equipe Interna</h2>
+												</div>
+											</div>
+											<div class="row spaced-cols content-center-sm center-sm" data-type="row">
+												<div class="col-sm-6 col-md-4 ">
+													<div class="card y-move no-padding bordered"> <img decoding="async"
+															class="face"
+															src="./wp-content/uploads/2019/09/cropped-Thaise-Costa-3.png"
+															alt="" title="cropped-Thaise-Costa-3.png">
+														<div data-type="column"
+															class="col-padding-small col-padding-small-xs description-container">
+															<h4 class="font-500">Thaíse Costa</h4>
+															<p class="small" style="font-style: italic;">Professora do
+																Departamento de Ciências Exatas da UFPB e coordenadora
+																do Projeto</p>
+															<div class="social-icons-group" data-type="group"> <a
+																	href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-facebook-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-twitter-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-linkedin-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-google-plus-square"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-4">
+													<div class="card y-move no-padding bordered"> <img decoding="async"
+															class="face"
+															src="./wp-content/uploads/2020/06/cropped-Vanessa-Dantas-5.jpg"
+															alt="" title="cropped-Vanessa-Dantas-5.jpg">
+														<div data-type="column"
+															class="col-padding-small col-padding-small-xs description-container">
+															<h4 class="font-500">Vanessa Dantas</h4>
+															<p class="small" style="font-style: italic;">Professora do
+																Departamento de Ciências Exatas da UFPB&nbsp;</p>
+															<div class="social-icons-group" data-type="group"> <a
+																	href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-facebook-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-twitter-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-linkedin-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-google-plus-square"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-4">
+													<div class="card y-move no-padding bordered"> <img decoding="async"
+															class="face"
+															src="./wp-content/uploads/2020/06/cropped-Renata-1.jpg"
+															alt="" title="cropped-Renata-1.jpg">
+														<div data-type="column"
+															class="col-padding-small col-padding-small-xs description-container">
+															<h4 class="font-500">Renata Viegas</h4>
+															<p class="small" style="font-style: italic;">Professora do
+																Departamento de Ciências Exatas da UFPB&nbsp;</p>
+															<div class="social-icons-group" data-type="group"> <a
+																	href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-facebook-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-twitter-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-linkedin-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-google-plus-square"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-4">
+													<div class="card y-move no-padding bordered"> <img decoding="async"
+															class="face"
+															src="./wp-content/uploads/2020/06/cropped-Sheyla-Medeiros-1.jpg"
+															alt="" title="cropped-Sheyla-Medeiros-1.jpg">
+														<div data-type="column"
+															class="col-padding-small col-padding-small-xs description-container">
+															<h4 class="font-500">Sheyla Medeiros</h4>
+															<p class="small" style="font-style: italic;">Professora do
+																Departamento de Ciências Exatas da UFPB&nbsp;</p>
+															<div class="social-icons-group" data-type="group"> <a
+																	href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-facebook-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-twitter-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-linkedin-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-google-plus-square"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-4">
+													<div class="card y-move no-padding bordered"> <img decoding="async"
+															class="face"
+															src="./wp-content/uploads/2019/09/cropped-pp-2.jpg" alt=""
+															title="cropped-pp-2.jpg">
+														<div data-type="column"
+															class="col-padding-small col-padding-small-xs description-container">
+															<h4 class="font-500">Madalena Pontes</h4>
+															<p class="small" style="font-style: italic;">Graduanda de
+																Licenciatura em Ciência da Computação e aluna de
+																iniciação científica</p>
+															<div class="social-icons-group" data-type="group"> <a
+																	href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-facebook-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-twitter-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-linkedin-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-google-plus-square"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-6 col-md-4">
+													<div class="card y-move no-padding bordered"> <img decoding="async"
+															class="face"
+															src="./wp-content/uploads/2019/09/cropped-WhatsApp-Image-2019-09-17-at-20.19.27-6.jpeg"
+															alt=""
+															title="cropped-WhatsApp-Image-2019-09-17-at-20.19.27-6.jpeg">
+														<div data-type="column"
+															class="col-padding-small col-padding-small-xs description-container">
+															<h4 class="font-500">Wanessa Paiva</h4>
+															<p class="small" style="font-style: italic;">Graduanda de
+																Licenciatura em Ciência da Computação e aluna de
+																iniciação científica</p>
+															<div class="social-icons-group" data-type="group"> <a
+																	href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-facebook-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-twitter-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-linkedin-square"></i></a>
+																<a href="#" target="_self" data-reiki-hidden="true"><i
+																		class="gray fa icon fa-google-plus-square"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-label="Team" data-id="team--1" data-export-id="team-2" data-category="team"
+					class="team-2 content-section content-section-spacing" id="team-1"
+					style="background-color: rgb(255, 255, 255);">
+					<div class="gridContainer">
+						<div class="row text-center">
+							<div class="section-title-col" data-type="column">
+								<h2 class="">Equipe Externa</h2>
+							</div>
+						</div>
+						<div class="row spaced-cols content-center-sm" data-type="row">
+							<div class="col-sm-6 col-md-3">
+								<div class="card y-move no-padding bordered"> <img decoding="async" class="face"
+										src="./wp-content/uploads/2019/09/cropped-WhatsApp-Image-2019-09-17-at-20.16.24-4.jpeg"
+										alt="" title="cropped-WhatsApp-Image-2019-09-17-at-20.16.24-4.jpeg">
+									<div data-type="column"
+										class="col-padding-small col-padding-small-xs description-container">
+										<h4 class="font-500">Emerson Felipe</h4>
+										<p class="small" style="font-style: italic;">Professor apoiador na escola
+											indígena</p>
+										<div class="social-icons-group" data-type="group"> <a href="#" target="_self"
+												data-reiki-hidden="true"><i
+													class="gray fa icon fa-facebook-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-twitter-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-linkedin-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-google-plus-square"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="card y-move no-padding bordered"> <img decoding="async" class="face"
+										src="./wp-content/uploads/2019/09/cropped-Joyce-Yara-4.jpeg" alt=""
+										title="cropped-Joyce-Yara-4.jpeg">
+									<div data-type="column"
+										class="col-padding-small col-padding-small-xs description-container">
+										<h4 class="font-500">Joyce Yara</h4>
+										<p class="small" style="font-style: italic;">Aluna líder na escola indígena</p>
+										<div class="social-icons-group" data-type="group"> <a href="#" target="_self"
+												data-reiki-hidden="true"><i
+													class="gray fa icon fa-facebook-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-twitter-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-linkedin-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-google-plus-square"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="card y-move no-padding bordered"> <img decoding="async" class="face"
+										src="./wp-content/uploads/2019/09/cropped-Lissandra-Rodrigues.jpeg" alt=""
+										title="cropped-Lissandra-Rodrigues.jpeg">
+									<div data-type="column"
+										class="col-padding-small col-padding-small-xs description-container">
+										<h4 class="font-500">Lissandra Rodrigues</h4>
+										<p class="small" style="font-style: italic;">Aluna líder na escola indígena</p>
+										<div class="social-icons-group" data-type="group"> <a href="#" target="_self"
+												data-reiki-hidden="true"><i
+													class="gray fa icon fa-facebook-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-twitter-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-linkedin-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-google-plus-square"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="card y-move no-padding bordered"> <img decoding="async" class="face"
+										src="./wp-content/uploads/2019/09/cropped-Shirlayne-Santos-1.jpeg" alt=""
+										title="cropped-Shirlayne-Santos-1.jpeg">
+									<div data-type="column"
+										class="col-padding-small col-padding-small-xs description-container">
+										<h4 class="font-500">Shirlayne Santos</h4>
+										<p class="small" style="font-style: italic;">Aluna líder na escola indígena</p>
+										<div class="social-icons-group" data-type="group"> <a href="#" target="_self"
+												data-reiki-hidden="true"><i
+													class="gray fa icon fa-facebook-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-twitter-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-linkedin-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-google-plus-square"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-label="Atividades" data-id="team--2" data-export-id="team-5" data-category="team"
+					class="team-5 content-section content-section-spacing" id="atividades"
+					style="background-color: rgb(245, 250, 253);">
+					<div class="gridContainer">
+						<div class="row text-center">
+							<div class="section-title-col" data-type="column">
+								<h2 class="">Atividades</h2>
+								<p class="">
+								<section id="cd-timeline" class="cd-container timeline-express">
+
+
+									<div class="cd-timeline-block setembro 21 2019 announcement-718">
+
+
+										<div class="cd-timeline-img cd-picture icon-no-readmore"
+											style="background:#75CE66;">
+
+											<!-- Custom Action Hook -->
+
+											<!-- Standard Font Awesome Icon -->
+											<span class="fa fa-graduation-cap" title="1ª Visita à UFPB"></span>
+
+
+										</div> <!-- cd-timeline-img -->
+
+
+										<!-- Timeline Content -->
+										<div class="cd-timeline-content">
+
+
+											<!-- Announcement Title -->
+											<div class="cd-timeline-title-container">
+
+
+												<h2 class="cd-timeline-item-title">
+													1ª Visita à UFPB </h2>
+
+											</div>
+											<!-- End Announcement Title -->
+
+											<img decoding="async" width="350" height="120"
+												src="./wp-content/uploads/2019/09/IMG-20190604-WA0064-1-350x120.jpg"
+												class="announcement-banner-image" alt="1ª Visita à UFPB">
+											<!-- Announcement Excerpt -->
+											<div class="the-excerpt">
+												<p>Visita das alunas da Escola às instalações da UFPB para
+													apresentação dos cursos das áreas de Computação.</p>
+												<br>
+												<a href="./visita-a-ufpb/index.html">Leia mais&#8230;</a>
+											</div>
+											<!-- End Announcement Excerpt -->
+
+
+										</div>
+										<!-- End Timeline Content -->
+
+									</div>
+									<!-- End Timeline Block -->
+
+									<div class="cd-timeline-block setembro 25 2019 announcement-722">
+
+
+										<div class="cd-timeline-img cd-picture icon-no-readmore"
+											style="background:#75CE66;">
+
+											<!-- Custom Action Hook -->
+
+											<!-- Standard Font Awesome Icon -->
+											<span class="fa fa-book" title="Visita à Escola"></span>
+
+
+										</div> <!-- cd-timeline-img -->
+
+
+										<!-- Timeline Content -->
+										<div class="cd-timeline-content">
+
+
+											<!-- Announcement Title -->
+											<div class="cd-timeline-title-container">
+
+
+												<h2 class="cd-timeline-item-title">
+													Visita à Escola </h2>
+
+											</div>
+											<!-- End Announcement Title -->
+
+											<img decoding="async" width="350" height="120"
+												src="./wp-content/uploads/2019/09/IMG-20190521-WA0010-1-350x120.jpg"
+												class="announcement-banner-image" alt="Visita à Escola">
+											<!-- Announcement Excerpt -->
+											<div class="the-excerpt">
+											</div>
+											<!-- End Announcement Excerpt -->
+
+
+										</div>
+										<!-- End Timeline Content -->
+
+									</div>
+									<!-- End Timeline Block -->
+
+									<div class="cd-timeline-block setembro 25 2019 announcement-728">
+
+
+										<div class="cd-timeline-img cd-picture icon-no-readmore"
+											style="background:#75CE66;">
+
+											<!-- Custom Action Hook -->
+
+											<!-- Standard Font Awesome Icon -->
+											<span class="fa fa-edit"
+												title="Oficina Design de Soluções Tecnológicas"></span>
+
+
+										</div> <!-- cd-timeline-img -->
+
+
+										<!-- Timeline Content -->
+										<div class="cd-timeline-content">
+
+
+											<!-- Announcement Title -->
+											<div class="cd-timeline-title-container">
+
+
+												<h2 class="cd-timeline-item-title">
+													Oficina Design de Soluções Tecnológicas </h2>
+
+											</div>
+											<!-- End Announcement Title -->
+
+											<img decoding="async" width="160" height="120"
+												src="./wp-content/uploads/2019/09/IMG-20190718-WA0054.jpg"
+												class="announcement-banner-image"
+												alt="Oficina Design de Soluções Tecnológicas">
+											<!-- Announcement Excerpt -->
+											<div class="the-excerpt">
+												<p>Oficina de Design de Soluções Tecnológicas para Empoderar Mulheres.
+												</p>
+												<br>
+												<a href="./oficina-de-design/index.html">Leia mais&#8230;</a>
+											</div>
+											<!-- End Announcement Excerpt -->
+
+
+										</div>
+										<!-- End Timeline Content -->
+
+									</div>
+									<!-- End Timeline Block -->
+
+									<div class="cd-timeline-block maio 14 2020 announcement-825">
+
+
+										<div class="cd-timeline-img cd-picture icon-no-readmore"
+											style="background:#75CE66;">
+
+											<!-- Custom Action Hook -->
+
+											<!-- Standard Font Awesome Icon -->
+											<span class="fa fa-flask"
+												title="Visita para conhecer os projetos de ensino, pesquisa e extensão"></span>
+
+
+										</div> <!-- cd-timeline-img -->
+
+
+										<!-- Timeline Content -->
+										<div class="cd-timeline-content">
+
+
+											<!-- Announcement Title -->
+											<div class="cd-timeline-title-container">
+
+
+												<h2 class="cd-timeline-item-title">
+													Visita para conhecer os projetos de ensino, pesquisa e extensão
+												</h2>
+
+											</div>
+											<!-- End Announcement Title -->
+
+											<img loading="lazy" decoding="async" width="350" height="120"
+												src="./wp-content/uploads/2020/05/nina-3-350x120.jpg"
+												class="announcement-banner-image"
+												alt="Visita para conhecer os projetos de ensino, pesquisa e extensão">
+											<!-- Announcement Excerpt -->
+											<div class="the-excerpt">
+												<p>Na Semana da Ciência e Tecnologia algumas alunas da escola indígena
+													visitaram a UFPB a fim de conhecer os projetos de ensino, pesquisa e
+													extensão da instituição.</p>
+												<a
+													href="./visita-as-instalacoes-da-ufpb-para-conhecer-os-projetos-de-ensino-pesquisa-e-extensao-2/index.html">Leia
+													mais&#8230;</a><a> </a>
+											</div>
+											<!-- End Announcement Excerpt -->
+
+
+										</div>
+										<!-- End Timeline Content -->
+
+									</div>
+									<!-- End Timeline Block -->
+
+									<div class="cd-timeline-block maio 21 2020 announcement-837">
+
+
+										<div class="cd-timeline-img cd-picture icon-no-readmore"
+											style="background:#75CE66;">
+
+											<!-- Custom Action Hook -->
+
+											<!-- Standard Font Awesome Icon -->
+											<span class="fa fa-film" title="Apresentação de Filmes"></span>
+
+
+										</div> <!-- cd-timeline-img -->
+
+
+										<!-- Timeline Content -->
+										<div class="cd-timeline-content">
+
+
+											<!-- Announcement Title -->
+											<div class="cd-timeline-title-container">
+
+
+												<h2 class="cd-timeline-item-title">
+													Apresentação de Filmes </h2>
+
+											</div>
+											<!-- End Announcement Title -->
+
+											<img loading="lazy" decoding="async" width="350" height="120"
+												src="./wp-content/uploads/2020/05/IMG_20190612_092330859-350x120.jpg"
+												class="announcement-banner-image" alt="Apresentação de Filmes">
+											<!-- Announcement Excerpt -->
+											<div class="the-excerpt">
+												<span style="color: #929fb2">Nesse tipo de atividade prioriza-se o foco
+													na representação do protagonismo feminino através de exibição de
+													filmes visando a conscientização e promoção do debate entre as
+													alunas.</span>
+
+												<a href="./apresentacao-de-filmes/index.html">Leia mais…</a>
+											</div>
+											<!-- End Announcement Excerpt -->
+
+
+										</div>
+										<!-- End Timeline Content -->
+
+									</div>
+									<!-- End Timeline Block -->
+
+									<div class="cd-timeline-block maio 24 2020 announcement-848">
+
+
+										<div class="cd-timeline-img cd-picture icon-no-readmore"
+											style="background:#75CE66;">
+
+											<!-- Custom Action Hook -->
+
+											<!-- Standard Font Awesome Icon -->
+											<span class="fa fa-laptop" title="Oficina para os professores"></span>
+
+
+										</div> <!-- cd-timeline-img -->
+
+
+										<!-- Timeline Content -->
+										<div class="cd-timeline-content">
+
+
+											<!-- Announcement Title -->
+											<div class="cd-timeline-title-container">
+
+
+												<h2 class="cd-timeline-item-title">
+													Oficina para os professores </h2>
+
+											</div>
+											<!-- End Announcement Title -->
+
+											<img loading="lazy" decoding="async" width="350" height="120"
+												src="./wp-content/uploads/2020/05/WhatsApp-Image-2020-05-04-at-21.48.01-350x120.jpeg"
+												class="announcement-banner-image" alt="Oficina para os professores">
+											<!-- Announcement Excerpt -->
+											<div class="the-excerpt">
+												<p>A oficina  teve como objetivo apresentar o laboratório de informática
+													como um espaço de aprendizagem e apoio para as aulas.</p>
+
+												<a href="./oficina-para-os-professores/index.html">Leia mais&#8230;</a>
+											</div>
+											<!-- End Announcement Excerpt -->
+
+
+										</div>
+										<!-- End Timeline Content -->
+
+									</div>
+									<!-- End Timeline Block -->
+
+								</section>
+
+								<!-- Timeline Express Free v1.8.0 | Site: https://www.wp-timelineexpress.com | Author: CodeParrots - http://www.codeparrots.com -->&nbsp;
+								</p>
+
+								<!-- Timeline Express Free v1.8.0 | Site: https://www.wp-timelineexpress.com | Author: CodeParrots - http://www.codeparrots.com -->
+
+								<!-- Timeline Express Free v1.8.0 | Site: https://www.wp-timelineexpress.com | Author: CodeParrots - http://www.codeparrots.com -->
+
+								<!-- Timeline Express Free v1.8.0 | Site: https://www.wp-timelineexpress.com | Author: CodeParrots - http://www.codeparrots.com -->&nbsp;<br
+									class="">
+
+								<!-- Timeline Express Free v1.8.0 | Site: https://www.wp-timelineexpress.com | Author: CodeParrots - http://www.codeparrots.com -->
+
+								<!-- Timeline Express Free v1.8.0 | Site: https://www.wp-timelineexpress.com | Author: CodeParrots - http://www.codeparrots.com --><!-- Start of timeline -->
+								<!-- END of timeline -->
+
+
+
+
+
+								<!-- Timeline Express Free v1.8.0 | Site: https://www.wp-timelineexpress.com | Author: CodeParrots - http://www.codeparrots.com -->
+
+								<!-- Timeline Express Free v1.8.0 | Site: https://www.wp-timelineexpress.com | Author: CodeParrots - http://www.codeparrots.com --><span
+									style='color: rgb(50, 55, 60); font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; font-size: 16.875px; text-align: left; background-color: rgb(255, 255, 255);'
+									class=""> </span>
+
+								<!-- Timeline Express Free v1.8.0 | Site: https://www.wp-timelineexpress.com | Author: CodeParrots - http://www.codeparrots.com -->
+								<div class=""></div>
+							</div>
+						</div>
+						<div class="row spaced-cols content-center-sm" data-type="row">
+							<div class="col-xs-12 col-sm-6 col-md-3 col-padding">
+								<div class="row ">
+									<div data-type="column" class="col-xs-12 col-sm-12">
+										<div class="social-icons-group" data-type="group"> <a href="#" target="_self"
+												data-reiki-hidden="true"><i
+													class="gray fa icon fa-facebook-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-twitter-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-linkedin-square"></i></a> <a href="#"
+												target="_self" data-reiki-hidden="true"><i
+													class="gray fa icon fa-google-plus-square"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer footer-simple">
+			<div class="footer-content center-xs">
+				<div class="gridContainer">
+					<div class="row middle-xs footer-content-row">
+						<div class="footer-content-col col-xs-12">
+							<p class="copyright">&copy;&nbsp;&nbsp;2024&nbsp;Projeto Nina.&nbsp;Construído usando o
+								WordPress e o <a target="_blank"
+									href="https://extendthemes.com/go/built-with-mesmerize/"
+									class="mesmerize-theme-link"> Tema Mesmerize</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" id="font-awesome-css"
+		href="./wp-content/plugins/timeline-express/lib/icons/css/font-awesome.min.css?ver=4.7.0" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="timeline-express-base-css"
+		href="./wp-content/plugins/timeline-express/lib/public/css/min/timeline-express.min.css?ver=1.8.0"
+		type="text/css" media="all">
+	<style id="timeline-express-base-inline-css" type="text/css">
+		#cd-timeline::before {
+			background: #D7E4ED;
+		}
+
+		#cd-timeline .cd-timeline-content {
+			background: #EFEFEF;
+			-webkit-box-shadow: 0 3px 0 #B9C5CD;
+			-moz-box-shadow: 0 3px 0 #B9C5CD;
+			box-shadow: 0 3px 0 #B9C5CD;
+		}
+
+		.cd-timeline-block:nth-child(odd) .cd-timeline-content::before {
+			border-left-color: #EFEFEF;
+		}
+
+		.cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+			border-right-color: #EFEFEF;
+		}
+
+		@media only screen and (max-width: 821px) {
+			.cd-timeline-content::before {
+				border-left-color: transparent;
+				border-right-color: #EFEFEF;
+			}
+
+			.cd-timeline-block:nth-child(odd) .cd-timeline-content::before {
+				border-left-color: transparent;
+			}
+		}
+	</style>
+	<script type="text/javascript" defer
+		src="./wp-content/plugins/mesmerize-companion/theme-data/mesmerize/assets/js/companion.bundle.min.js?ver=1.6.110"
+		id="companion-bundle-js"></script>
+
+	<script type="text/javascript" defer src="./wp-includes/js/imagesloaded.min.js?ver=5.0.0"
+		id="imagesloaded-js"></script>
+	<script type="text/javascript" defer src="./wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+	<script type="text/javascript" id="mesmerize-theme-js-extra">
+		/* <![CDATA[ */
+		var mesmerize_backstretch = { "images": [".\/\/wp-content\/uploads\/2019\/09\/imagem1.2.png", ".\/\/wp-content\/uploads\/2019\/09\/imagem2.2.png", ".\/\/wp-content\/uploads\/2019\/09\/imagem3.2.png"], "duration": "5000", "transitionDuration": "1000", "animateFirst": "" };
+		/* ]]> */
+	</script>
+	<script type="text/javascript" defer src="./wp-content/themes/mesmerize/assets/js/theme.bundle.min.js?ver=1.6.85"
+		id="mesmerize-theme-js"></script>
+	<script type="text/javascript" id="timeline-express-js-base-js-extra">
+		/* <![CDATA[ */
+		var timeline_express_data = { "animation_disabled": "" };
+		/* ]]> */
+	</script>
+	<script type="text/javascript"
+		src="./wp-content/plugins/timeline-express/lib/public/js/min/timeline-express.min.js?ver=6.4.2"
+		id="timeline-express-js-base-js"></script>
+	<script>/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
+			var t, e = location.hash.substring(1);
+			/^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+		}, !1);</script>
+</body>
+
+</html>
